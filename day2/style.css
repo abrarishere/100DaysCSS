@@ -1,0 +1,118 @@
+body{
+  box-sizing: border-box;
+}
+.container{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background: #19f175;
+  margin-left: -200px;
+  margin-top: -200px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.nav{
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inner{
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  width:  100%;
+  height: 8px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+}
+.inner:nth-child(1){
+  animation: menu-close 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+.inner:nth-child(2){
+  animation: menu-close2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+.inner:nth-child(3){
+  animation: menu-close3 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+.open .inner:nth-child(1){
+  animation: menu-open 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+.open .inner:nth-child(2){
+  animation: menu-open2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+.open .inner:nth-child(3){
+  animation: menu-open3 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+@keyframes menu-open {
+  0%{
+    transform: translateY(-25px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: rotate(45deg);
+  }
+}
+@keyframes menu-open2{
+  0%{
+    transform: scale(100%);
+  }
+  100%{
+    transform: scale(0%);
+  }
+}
+@keyframes menu-open3{
+  0%{
+    transform: translateY(25px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: rotate(135deg);
+  }
+}
+@keyframes menu-close {
+  0%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes menu-close2{
+  0%{
+    transform: scale(0%);
+  }
+  100%{
+    transform: scale(100%);
+  }
+}
+
+@keyframes menu-close3{
+  0%{
+    transform: rotate(135deg);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(25px);
+  }
+}

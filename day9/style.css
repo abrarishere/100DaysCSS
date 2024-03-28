@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(95, 95, 95, 0.9);
+}
+
+.upper {
+  width: 100%;
+  height: 330px;
+  background: #1a2238;
+}
+.upper .moon {
+  position: absolute;
+  width: 80px;
+  background: #eee99d;
+  top: 45px;
+  left: 45px;
+  box-shadow: 2px 2px 10px 2px rgba(236, 229, 127, 0.5);
+  height: 80px;
+  border-radius: 50%;
+}
+.upper .moon .moon-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d6c687;
+  opacity: 20%;
+  top: 47px;
+  right: calc(50% - 10px);
+}
+.upper .moon .moon-dot:nth-child(2) {
+  top: 3px;
+  height: 15px;
+  width: 15px;
+  left: 30px;
+}
+.upper .moon .moon-dot:nth-child(3) {
+  top: 12px;
+  left: 10px;
+}
+.upper .moon .moon-dot:nth-child(4) {
+  top: 30px;
+  left: 12px;
+}
+.upper .moon .moon-dot:nth-child(5) {
+  top: 10px;
+  right: 10px;
+}
+.upper .moon .moon-dot:nth-child(6) {
+  top: 15px;
+  right: 14px;
+}
+.upper .moon .moon-dot:nth-child(7) {
+  top: 30px;
+  right: 30px;
+}
+.upper .moon .moon-dot:nth-child(8) {
+  top: 42px;
+  right: 42px;
+}
+.upper .moon .moon-dot:nth-child(9) {
+  top: 47px;
+  right: 47px;
+}
+.upper .moon .moon-dot:nth-child(10) {
+  top: 30px;
+  right: 30px;
+}
+.upper .moon .moon-dot:nth-child(11) {
+  top: 12px;
+  right: 12px;
+}
+.upper .moon .moon-dot:nth-child(12) {
+  top: 10px;
+  left: 10px;
+}
+.upper .hill-bg {
+  position: absolute;
+  left: -30px;
+  top: 200px;
+  background: rgba(49, 67, 117, 0.3647058824);
+  width: 300px;
+  border-radius: 50%/50% 50% 0 0;
+  height: 310px;
+}
+.upper .hill-bg:nth-child(2) {
+  top: 200px;
+  left: 160px;
+}
+.upper .hill-fg-1 {
+  position: absolute;
+  left: -90px;
+  top: 250px;
+  background: rgba(45, 54, 80, 0.6862745098);
+  width: 300px;
+  border-radius: 50%/50% 50% 0 0;
+  height: 310px;
+}
+.upper .hill-fg-2 {
+  position: absolute;
+  left: 70px;
+  top: 200px;
+  background: rgba(45, 54, 80, 0.6862745098);
+  width: 300px;
+  border-radius: 50%/50% 50% 0 0;
+  height: 310px;
+}
+.upper .hill-fg-3 {
+  position: absolute;
+  right: -90px;
+  top: 250px;
+  background: rgba(45, 54, 80, 0.6862745098);
+  width: 300px;
+  border-radius: 50%/50% 50% 0 0;
+  height: 310px;
+}
+
+.lower {
+  z-index: 15;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lower .left {
+  padding: 0 0 0 10px;
+  display: flex;
+  gap: 4px;
+  width: 230px;
+  align-items: center;
+}
+.lower .left .temp p {
+  font-weight: 200;
+  font-size: 3rem;
+  padding-right: 4px;
+}
+.lower .left .env p {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.lower .right {
+  padding: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.lower .right p {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.lower .right p span {
+  font-weight: 500;
+  padding-left: 9px;
+}/*# sourceMappingURL=style.css.map */

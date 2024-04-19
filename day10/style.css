@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+@import url(https://100dayscss.com/codepen/css/font-awesome.min.css);
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,31 @@
 }
 html,
 body {
-  background: #000;
   width: 100%;
   height: 100%;
+}
+.main {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  line-height: 100%;
+  top: 50%;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  background: #4c4c4c;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .center {
+  position: absolute;
+  top: 87px;
+  left: 87px;
+  width: 212px;
+  height: 212px;
+  background: #242424;
+  text-align: center;
+  border-radius: 50%;
+  border: 7px solid  #3a3a3a;
 }
